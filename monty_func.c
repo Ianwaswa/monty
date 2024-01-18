@@ -1,10 +1,13 @@
 #include "monty.h"
+
 /**
  * read_file - reads a bytecode file and runs commands
  * @filename: pathname to file
- * @stack: pointer to the top of the stack
+ * @stack: pointer
  */
+
 void read_file(char *filename, stack_t **stack)
+
 {
 	char *line;
 	size_t i = 0;
@@ -46,11 +49,13 @@ void read_file(char *filename, stack_t **stack)
 }
 
 /**
- * get_op_func -  checks opcode and returns the correct function
- * @str: the opcode
- * Return: returns a functions, or NULL on failure
+ * get_op_func -  checks opcode and returns correct function
+ * @str: opcode
+ * Return: returns a functions or NULL on failure
  */
+
 instruct_func get_op_func(char *str)
+
 {
 	int i;
 
@@ -83,11 +88,13 @@ instruct_func get_op_func(char *str)
 }
 
 /**
- * isnumber - checks if a string is a number
+ * isnumber - checks if the string is a number
  * @str: string being passed
- * Return: returns 1 if string is a number, 0 otherwise
+ * Return: returns 1 for a number or 0 otherwise
  */
+
 int isnumber(char *str)
+
 {
 	unsigned int i;
 
@@ -109,13 +116,15 @@ int isnumber(char *str)
 }
 
 /**
- * parse_line - parses a line for an opcode and arguments
- * @line: the line to be parsed
- * @stack: pointer to the head of the stack
- * @line_number: the current line number
- * Return: returns the opcode or null on failure
+ * parse_line - parses a line
+ * @line: line to be parsed
+ * @stack: pointer to head of stack
+ * @line_number: current line number
+ * Return: returns opcode for success or null on failure
  */
+
 char *parse_line(char *line, stack_t **stack, unsigned int line_number)
+
 {
 	char *op_code, *push, *arg;
 	(void)stack;

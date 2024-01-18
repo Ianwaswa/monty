@@ -1,11 +1,13 @@
 #include "monty.h"
 
 /**
- * _pstr - mod top of stack y second top stack
- * @stack: pointer to lists for monty stack
+ * _pstr - mod
+ * @stack: pointer
  * @line_number: number of line opcode occurs on
  */
+
 void _pstr(stack_t **stack, unsigned int line_number)
+
 {
 	stack_t *tmp = *stack;
 	int c = 0;
@@ -25,11 +27,13 @@ void _pstr(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _rotl - mod top of stack y second top stack
- * @stack: pointer to lists for monty stack
+ * _rotl - mod
+ * @stack: pointer
  * @line_number: number of line opcode occurs on
  */
+
 void _rotl(stack_t **stack, unsigned int line_number)
+
 {
 	stack_t *runner = *stack;
 
@@ -51,11 +55,13 @@ void _rotl(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _rotr - mod top of stack y second top stacks
- * @stack: pointer to lists for monty stack
+ * _rotr - mod
+ * @stack: pointer
  * @line_number: number of line opcode occurs on
  */
+
 void _rotr(stack_t **stack, unsigned int line_number)
+
 {
 	stack_t *runner = *stack;
 
